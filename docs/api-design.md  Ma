@@ -1,0 +1,39 @@
+# QuickNotes API Design
+
+## Endpoints
+
+1. **GET /notes**
+   * **Description:** Retrieves a list of notes.
+   * **Success:** 200 OK
+
+2. **GET /notes/:id**
+   * **Description:** Retrieves a single note by its ID.
+   * **Success:** 200 OK
+
+3. **POST /notes**
+   * **Description:** Creates a new note.
+   * **Success:** 201 Created
+
+4. **PUT /notes/:id**
+   * **Description:** Fully updates an existing note.
+   * **Success:** 200 OK
+
+5. **PATCH /notes/:id**
+   * **Description:** Partially updates an existing note (e.g., adding a tag).
+   * **Success:** 200 OK
+
+6. **DELETE /notes/:id**
+   * **Description:** Deletes a note.
+   * **Success:** 204 No Content
+
+---
+
+## JSON Examples
+
+### Request: Create a Note (POST /notes)
+```json
+{
+  "title": "Grocery List",
+  "body": "Milk, Eggs, Bread",
+  "userId": 1
+}
